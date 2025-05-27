@@ -3,8 +3,6 @@ describe('home page', () => {
         cy.visit('https://r0803440-realbeans.myshopify.com/')
         cy.get('#password').type('a')
         cy.get('button').click()
-        // Accept cookies
-        cy.get('#shopify-pc__banner__btn-accept').click()
     })
     
     it('shows the home page text', () => {

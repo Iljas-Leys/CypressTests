@@ -1,10 +1,8 @@
-describe('home page', () => {
+describe('about', () => {
     beforeEach(() => {
         cy.visit('https://r0803440-realbeans.myshopify.com/')
         cy.get('#password').type('a')
         cy.get('button').click()
-        // Accept cookies
-        cy.get('#shopify-pc__banner__btn-accept').click()
         // Go to about page
         cy.get('#HeaderMenu-about').click()
     })
